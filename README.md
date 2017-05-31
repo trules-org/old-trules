@@ -19,8 +19,14 @@ Events and Actions take place in a wider **Context**. The context is made up of 
 
 "What should you do in response?" is **Event Handling**. Actions are performed when Events are detected. Rules that evaluate the state are used to determine what to do in response to an event. The response to an event is **conditional** - based on the state of the context at the time the event is handled (there may be a lag between the time an event occurs, the time that it is detected, and the time that it is handled".  
 
-Business needs felixible tooling to help them describe their needs in terms of Events, Conditions and Actions. They need to be able to capture their needs naturally, in whatever order they prefer. They might start by identifying an Event, then define the Actions that might occur in response to the Event, and then define the Conditions that determine each Action - Or they might start by defining Actions followed by the Events that trigger them. The order in which the details are captured doesn't matter.
+Business needs flexible tooling to help them describe their needs in terms of Events, Conditions and Actions. They need to be able to capture their needs naturally, in whatever order they prefer. They might start by identifying an Event, then define the Actions that might occur in response to the Event, and then define the Conditions that determine each Action - Or they might start by defining Actions followed by the Events that trigger them. The order in which the details are captured doesn't matter.
 
-Completeness and precision is what matters. Business must be able to review and validate the details as they capture them, and when ready, Business must be able to communicate their needs to Development. Development in turn must be able to review and ask for clarification about the details. Refinement of the Business needs is a collaborative process.
+Completeness and precision is what matters. Business must be able to review and validate the details as they capture them, and when ready, Business must be able to communicate their needs to Development. Development in turn must be able to review and ask for clarification about the details. Refinement of the Business needs is a collaborative process. The process isn't complete until both Business and Development are satisfied that the requirements are complete and precise.
+
+* The tooling must allow Business to gather and refine the requirements in an unstructured manner.
+* The tooling must help Business validate each requirement.
+* The tooling must support clarifying requirements for Development.
+* The tooling must support formal agreement (between Business and Development) of requirements.
+* The tooling must support changing requirements after formal agreement.
 
 
