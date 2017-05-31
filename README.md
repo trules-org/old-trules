@@ -27,6 +27,6 @@ Completeness and precision of the requirements is what matters. Business must be
 * The tooling must help Business validate requirements.
 * The tooling must support clarifying requirements for Development.
 * The tooling must support formal agreement (between Business and Development) of requirements.
-* The tooling must support *changing* requirements after formal agreement.
+* The tooling must support ***changing*** requirements after formal agreement.
 
 That last bullet point is a killer of project deadlines, but it's essential. Business needs can change at any time, and those changes can invalidate the requirements that Business and Development agreed to. Understanding exactly what changed is essential, and tools are necessary to quickly reach that understanding.
