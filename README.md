@@ -30,3 +30,15 @@ Completeness and precision of the requirements is what matters. Business must be
 * The tooling must support ***changing*** requirements after formal agreement.
 
 That last bullet point is a killer of project deadlines, but it's essential. Business needs can change at any time, and those changes can invalidate the requirements that Business and Development agreed to. Understanding exactly what changed is essential, and tools are necessary to quickly reach that understanding.
+
+## Events
+* Ad Hoc Events
+* Scheduled Events (Expected?) - Process Events
+* Unusual, infrequent events
+
+## Conditions (aka Context Rules)
+### Objects (that make up the context)
+Current State and History are both relevant.
+### Rules (that evaluate the context)
+
+## Actions (including Processes)
