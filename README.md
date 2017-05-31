@@ -1,13 +1,14 @@
 # trules
-Lorum estum umun drafterumem...    
+Lorum estum umen drafterubus...  
+
 In many respects, the biggest challenge in creating a software solution is in understanding exactly what needs to be created. Business asks Development to build something, but there are often misunderstandings about what it is that Business wants. Business needs tools that help them to be very clear and precise about what they need. Development needs tools to help them understand and clarify what Business needs. Trules attempts to meet these tooling needs.  
 
 Software requirements can be specified using **Event**, **Condition** and **Action** statements. In response to each Event, Conditions are evaluated and Actions are performed.
 
-Something happens...  
-In response, something is done...  
-How did you know that something happened?  
-What should you do in response?  
+> Something happens...  
+> In response, something is done...  
+> How did you know that something happened?  
+> What should you do in response?  
 
 "Something happens" is an **Event**. Events happen. Events occur at points in time.  
   
@@ -17,11 +18,14 @@ Events and Actions take place in a wider **Context**. The context is made up of 
 
 "How did you know that something happened?" is **Event Detection**. Detection comes in two flavors - You are either **notified** that an event occured or you **recognize** that an event occured. Notification puts the onus on someone else to send the notification. Recognition puts the onus on you to spot the event - to recognize that the state has changed and the characteristics of the state that indicate the event has occured. Rules that evaluate the state of the context are used to detect the occurence of events.  
 
-"What should you do in response?" is **Event Handling**. Actions are performed when Events are detected. Rules that evaluate the state are used to determine what to do in response to an event. The response to an event is **conditional** - based on the state of the context at the time the event is handled (there may be a lag between the time an event occurs, the time that it is detected, and the time that it is handled".  
+"What should you do in response?" is **Event Handling**. Actions are performed when Events are detected. Rules that evaluate the state are used to determine what to do in response to an event. The response to an event is **conditional** - based on **rules** evaluated in the state of the context at the time the event is handled (there may be a lag between the time an event occurs, the time that it is detected, and the time that it is handled).  
 
-Business needs flexible tooling to help them describe their needs in terms of Events, Conditions and Actions. They need to be able to capture their needs naturally, in whatever order they prefer. They might start by identifying an Event, then define the Actions that might occur in response to the Event, and then define the Conditions that determine each Action - Or they might start by defining Actions followed by the Events that trigger them. The order in which the details are captured doesn't matter.
+Business needs flexible tooling to help them describe their needs clearly. We feel that it's natural to describe these needs in terms of Events, Conditions and Actions. They need to be able to capture their needs naturally, in whatever order they prefer. They might start by identifying an Event, then define the Actions that might occur in response to the Event, and then define the Conditions that determine each Action - Or they might start by defining Actions followed by the Events that trigger them. 
 
-Completeness and precision of the requirements is what matters. Business must be able to review and validate details as they capture them, and when ready, Business must be able to communicate their needs to Development. Development in turn must be able to review and ask for clarification about the details. Refinement of the Business needs is a collaborative process. The process isn't complete until both Business and Development are satisfied that the requirements are complete and precise.
+> The order in which the detailed requirements are captured doesn't matter.  
+> Completeness and precision of the requirements is what matters.  
+
+Business must be able to review and validate details as they capture them, and when ready, Business must be able to communicate their needs to Development. Development in turn must be able to review and ask for clarification about the details. Refinement of the Business needs is a collaborative process. The process isn't complete until both Business and Development are satisfied that the requirements are complete and precise.
 
 * The tooling must allow Business to gather and refine requirements in an unstructured manner.
 * The tooling must help Business validate requirements.
