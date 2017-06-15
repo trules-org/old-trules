@@ -48,7 +48,7 @@ What "you do in response to the event" is **Event Handling**. Actions are perfor
 * Scheduled Events (Expected?) - Process Events
 * Unusual, infrequent events  
 
-Some events are expected to occur within a specific timeframe. If these events do not occur when expected, actions may be initiated. Expected events are often associated with processes. As a process progresses it is expected that certain events will occur.
+Some events are expected (perhaps even scheduled) to occur within a specific timeframe. If these events do not occur when expected, actions may be initiated. Expected events are often associated with processes. As a process progresses it is expected that certain events will occur.
 
 An expected event can occur sooner or later than expected.
 Some events are planned for, but are considered to be exceptions to the norm. For example, when an Order is Placed it is possible that it will be Cancelled, but not expected.
@@ -61,4 +61,4 @@ Some events are planned for, but are considered to be exceptions to the norm. Fo
 ### Rules (that evaluate the context)
 
 ## Actions (including Processes)
-test
+
