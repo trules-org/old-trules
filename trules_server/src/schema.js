@@ -13,7 +13,9 @@ type Event {
 
 # This query specifies the entry points into our API.
 type Query {
+  # Returns the list of events
   events: [Event]
+  # Returns the matching event
   event(id: String, name: String): Event
 }
 
