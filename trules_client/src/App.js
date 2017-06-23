@@ -4,8 +4,6 @@ import './App.css';
 
 import {
   ApolloClient,
-  gql,
-  graphql,
   ApolloProvider,
   createNetworkInterface,
 } from 'react-apollo';
