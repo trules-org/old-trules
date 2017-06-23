@@ -22,3 +22,16 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.Event-list {
+  list-style: none;
+}
+
+.Event-list li {
+  border: 1px dotted gray;
+  width: 40%;
+  height: 3em;  
+  margin: auto;
+  text-align: left;
+}
+

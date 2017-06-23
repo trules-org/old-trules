@@ -2,26 +2,35 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import {
+  ApolloClient,
+  gql,
+  graphql,
+  ApolloProvider,
+  createNetworkInterface,
+} from 'react-apollo';
 
-const EventList = () =>
-     (<span>
-       <h3> Events </h3>
-        <ul>
-          <li>Order Placed</li>
-          <li>Order Canceled</li>
-        </ul>
-     </span>);
+import EventsListWithData from './components/EventsListWithData';
+
+const networkInterface = createNetworkInterface({ 
+  uri: 'http://localhost:4000/graphql',
+});
+const client = new ApolloClient({
+  networkInterface,
+});
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to trules</h2>
-        </div>
-        < EventList />
-      </div>
+      <ApolloProvider client={client}>
+         <div className="App">
+           <div className="App-header">
+             <img src={logo} className="App-logo" alt="logo" />
+             <h2>Welcome to trules</h2>
+           </div>
+           <EventsListWithData />
+         </div>
+       </ApolloProvider>
     );
   }
 }
