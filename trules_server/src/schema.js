@@ -6,14 +6,14 @@ import {
 import { resolvers } from './resolvers';
 
 const typeDefs = `
-type Channel {
+type BusinessEvent {
   id: ID!                # "!" denotes a required field
   name: String
 }
 # This type specifies the entry points into our API. In this case
-# there is only one - "channels" - which returns a list of channels.
+# there is only one - "businessEvents" - which returns a list of business events.
 type Query {
-  channels: [Channel]    # "[]" means this is a list of channels
+  businessEvents: [BusinessEvent]    # "[]" means this is a list of business events
 }
 `;
 

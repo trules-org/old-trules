@@ -1,16 +1,16 @@
-const channels = [{
+const businessEvents = [{
   id: 1,
-  name: 'soccer',
+  name: 'Order Placed',
 }, {
   id: 2,
-  name: 'baseball',
+  name: 'Order Canceled',
 }];
 
 
 export const resolvers = {
   Query: {
-    channels: () => {
-      return channels;
+    businessEvents: () => {
+      return businessEvents;
     },
   },
 };
