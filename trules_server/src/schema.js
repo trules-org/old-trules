@@ -20,7 +20,7 @@ type Query {
 
 # The mutation root type, used to define all mutations.
 type Mutation {
-  # A mutation to add a new channel to the list of channels
+  # A mutation to add a new event to the list of events
   addEvent(name: String!): Event
 }
 `;
