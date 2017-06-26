@@ -6,7 +6,7 @@ const db = new Sequelize('trules', null, null, {
   storage: './trules.sqlite',
 });
 
-const EventModel = db.define('event', {
+const EventDefModel = db.define('eventDef', {
   id: { type: Sequelize.STRING, primaryKey: true },
   name: { type: Sequelize.STRING },
 });
@@ -14,12 +14,12 @@ const EventModel = db.define('event', {
 // Initialize the db
 db.sync({ force: true }).then(() => {
   _.times(1, () => {
-    return EventModel.create({
+    return EventDefModel.create({
       id: "1",
       name: "OrderPlaced",
     });
   });
 });
 
-const Event = db.models.event;
-export { Event };
+const EventDef = db.models.eventDef;
+export { EventDef };

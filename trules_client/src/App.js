@@ -8,7 +8,7 @@ import {
   createNetworkInterface,
 } from 'react-apollo';
 
-import EventsListWithData from './components/EventsListWithData';
+import EventDefsListWithData from './components/EventDefsListWithData';
 
 const networkInterface = createNetworkInterface({ 
   uri: 'http://localhost:4000/graphql',
@@ -26,7 +26,7 @@ class App extends Component {
              <img src={logo} className="App-logo" alt="logo" />
              <h2>Welcome to trules</h2>
            </div>
-           <EventsListWithData />
+           <EventDefsListWithData />
          </div>
        </ApolloProvider>
     );

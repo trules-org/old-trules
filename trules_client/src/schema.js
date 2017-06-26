@@ -1,11 +1,11 @@
 export const typeDefs = `
-type Event {
+type EventDef {
    id: ID!                # "!" denotes a required field
    name: String
 }
 # This type specifies the entry points into our API. In this case
-# there is only one - "events" - which returns a list of events.
+# there is only one - "eventDefs" - which returns a list of events.
 type Query {
-   events: [Event]    # "[]" means this is a list of events
+   eventDefs: [Event]    # "[]" means this is a list of event definitions
 }
 `;

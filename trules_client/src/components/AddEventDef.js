@@ -4,7 +4,7 @@ import {
     graphql,
 } from 'react-apollo';
 
-const AddEvent = ({ mutate }) => {
+const AddEventDef = ({ mutate }) => {
   const handleKeyUp = (evt) => {
     if (evt.keyCode === 13) {
       evt.persist();
@@ -19,22 +19,22 @@ const AddEvent = ({ mutate }) => {
   return (
     <input
       type="text"
-      placeholder="New event"
+      placeholder="New event definition"
       onKeyUp={handleKeyUp}
     />
   );
 };
 
-const addEventMutation = gql`
-  mutation addEvent($name: String!) {
-    addEvent(name: $name) {
+const addEventDefMutation = gql`
+  mutation addEventDef($name: String!) {
+    addEventDef(name: $name) {
       id
       name
     }
   }
 `;
-const AddEventWithMutation = graphql(
-  addEventMutation
-)(AddEvent);
-export default AddEventWithMutation;
+const AddEventDefWithMutation = graphql(
+  addEventDefMutation
+)(AddEventDef);
+export default AddEventDefWithMutation;
 

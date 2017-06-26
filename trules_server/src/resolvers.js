@@ -1,21 +1,21 @@
-import { Event } from './connectors';
+import { EventDef } from './connectors';
 
 let nextID = 100;
 
 export const resolvers = {
   Query: {
-    events: () => {
-      return Event.findAll();
+    eventDefs: () => {
+      return EventDef.findAll();
     },
-    event: (_, args) => {
-      return Event.find({ where: args });
+    eventDef: (_, args) => {
+      return EventDef.find({ where: args });
     },
   },
   Mutation: {
-    addEvent: (root, args) => {
-      const newEvent = { id: nextID++ , name: args.name };
-      Event.insertOrUpdate(newEvent);
-      return newEvent;
+    addEventDef: (root, args) => {
+      const newEventDef = { id: nextID++ , name: args.name };
+      EventDef.insertOrUpdate(newEventDef);
+      return newEventDef;
     },    
   },
 };
